@@ -19,6 +19,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 import rosegraphics as rg
+import math
 
 
 def main():
@@ -26,6 +27,10 @@ def main():
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
     """
+    answer = hypotenuse(3, 4)
+    print(answer)
+
+    drawing('red', 10)
 
 
 ###############################################################################
@@ -42,7 +47,8 @@ def main():
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-
+def hypotenuse(length1,length2):
+    return math.sqrt((length1**2)+(length2**2))
 
 ###############################################################################
 #
@@ -72,7 +78,16 @@ def main():
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+def drawing(color,thickness):
+    window = rg.TurtleWindow()
+    stephen = rg.SimpleTurtle('turtle')
+    stephen.pen = rg.Pen('green',thickness)
+    meghna = rg.SimpleTurtle('turtle')
+    meghna.pen = rg.Pen(color,5)
 
+    stephen.forward(100)
+    meghna.backward(100)
+    window.close_on_mouse_click()
 
 ###############################################################################
 #
