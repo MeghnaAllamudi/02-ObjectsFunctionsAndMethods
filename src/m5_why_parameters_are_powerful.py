@@ -1,7 +1,7 @@
 """
 This module lets you experience the POWER of FUNCTIONS and PARAMETERS.
 Authors: David Mutchler, Vibha Alangar, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and MeghnaAllamudi.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
@@ -27,7 +27,7 @@ def main():
 
 
 ###############################################################################
-#
+# DONE
 # TODO: 2.
 #   First, RUN this program.  You will see that it draws concentric circles
 #   whose radii vary by 15.
@@ -55,7 +55,9 @@ def draw_circles(point):
       -- They have radii:  15  30  45  60  75  ..., respectively.
     """
     turtle = rg.SimpleTurtle()
-
+    for k in range(9)
+        draw_circles(point)
+        
     # --------------------------------------------------------------------------
     # Draw circles centered at the given Point, by telling the SimpleTurtle to:
     #  Step 1: Go to the given Point and point east (towards the right).
